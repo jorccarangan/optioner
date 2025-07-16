@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optioner Multimedia Services | Creative Design Solutions</title>
+    <meta name="description" content="Professional graphic design, web development, Amazon A+ pages, and social media services with AI-powered creative solutions">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#732366",
+                        secondary: "#4F46E5",
+                        accent: "#F59E0B"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #732366 0%, #4F46E5 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .chatbot-container {
+            transition: all 0.3s ease;
+        }
+        
+        .chatbot-toggle {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="logo"><a href="#"><img src="https://i.ibb.co/Bpwp4KW/optioner-logo-R02-060220-1080p-2x-100.jpg" alt="Optioner Multimedia Ser" border="0" width="200px" vspace="10px" style="max-width: 20% alt="Optioner Multimedia Services"></a></div>
+                    <!-- <span class="text-xl font-bold text-gray-800">Optioner Multimedia Services</span> -->
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-primary transition">Services</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-primary transition">Portfolio</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+                    <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Get Started</button>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 font-display">Creative Design Solutions for Your Business</h1>
+                    <p class="text-xl mb-8 opacity-90">We transform ideas into stunning visual experiences with our professional design services and AI-powered creativity.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">Explore Services</button>
+                        <button class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">Chat with Our AI</button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://i.ibb.co/XrT431F2/252-xl.jpg" alt="Quench your thirst - full of Creativity" class="rounded-xl shadow-xl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 font-display">Our Creative Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer comprehensive design solutions to elevate your brand and digital presence starts at $18/hour.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Web Design -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-md border border-gray-100 transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-indigo-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Web Design</h3>
+                    <p class="text-gray-600 mb-4">Custom, responsive websites that engage visitors and drive conversions.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Graphic Design -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-md border border-gray-100 transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Graphic Design</h3>
+                    <p class="text-gray-600 mb-4">Stunning visuals for branding, marketing materials, and digital assets.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Amazon A+ Pages -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-md border border-gray-100 transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center mb-6">
+                        <i class="fab fa-amazon text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Amazon A+ Pages</h3>
+                    <p class="text-gray-600 mb-4">Professional product pages that boost conversions on Amazon.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-md border border-gray-100 transition duration-300">
+                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-share-alt text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Social Media</h3>
+                    <p class="text-gray-600 mb-4">Engaging content and strategy for all major social platforms.</p>
+                    <a href="#" class="text-primary font-medium inline-flex items-center">Learn more <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 font-display">Our Portfolio</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our recent work and see how we've helped businesses like yours.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://i.ibb.co/nMJztrbd/Flux-Dev-A-futuristic-digital-illustration-depicting-a-stylize-3.jpg" alt="E-commerce website design" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Website</h3>
+                        <p class="text-gray-600 mb-4">Complete redesign for an online presence.</p>
+                        <span class="inline-block bg-indigo-100 text-primary px-3 py-1 rounded-full text-sm font-medium">Web Design</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://i.ibb.co/Nd5tWwhQ/Flux-Dev-A-futuristic-digital-illustration-depicting-a-stylize-0.jpg" alt="Brand identity design" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Brand Identity</h3>
+                        <p class="text-gray-600 mb-4">Complete branding package for a tech startup.</p>
+                        <span class="inline-block bg-green-100 text-secondary px-3 py-1 rounded-full text-sm font-medium">Graphic Design</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://i.ibb.co/vCcTfjrx/Flux-Dev-A-futuristic-digital-illustration-depicting-a-stylize-1.jpg" alt="Amazon A+ page design" class="w-full h-64 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Amazon Brand Store</h3>
+                        <p class="text-gray-600 mb-4">A+ product page, and listing optimization.</p>
+                        <span class="inline-block bg-yellow-100 text-accent px-3 py-1 rounded-full text-sm font-medium">Amazon Brand Store</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://picsum.photos/600/400?random=5" alt="AI chatbot interface" class="rounded-xl shadow-xl" loading="lazy">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 font-display">AI-Powered Design Assistant</h2>
+                    <p class="text-gray-600 mb-6">Get instant design recommendations, mockups, and creative ideas with our AI chatbot. It's like having a design expert available 24/7.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Get design suggestions in seconds</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Generate mockups and prototypes</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Receive color palette recommendations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-secondary mt-1 mr-3"></i>
+                            <span class="text-gray-700">Get instant feedback on your ideas</span>
+                        </li>
+                    </ul>
+                    <button id="openChatbot" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition flex items-center">
+                        <i class="fas fa-robot mr-2"></i> Try Our AI Designer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4 font-display">What Our Clients Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from businesses we've helped.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://picsum.photos/100?random=6" alt="Sarah Johnson" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Optioner transformed our website into a conversion machine. Their design expertise combined with the AI tools helped us achieve a 40% increase in leads."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://picsum.photos/100?random=7" alt="Michael Chen" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">Marketing Director, StyleHub</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The Amazon A+ pages they created for our products significantly improved our conversion rates. Their attention to detail is unmatched."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://picsum.photos/100?random=8" alt="Emily Rodriguez" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emily Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Founder, Bloom & Grow</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"Their social media designs have given our brand a fresh, professional look that resonates with our audience. Engagement has never been higher!"</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 font-display">Ready to Elevate Your Brand?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Let's create something amazing together. Get your FREE design on your first project with us today!</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-primary px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition">Get a FREE Design Now!</button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:bg-opacity-10 transition">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="logo"><a href="#"><img src="https://i.ibb.co/VYcyYLP1/optioner-logo-R02-350x100-041122-white-curved.png" border="0" width="200px" vspace="10px" style="max-width: 20% alt="Optioner Multimedia Services"></a></div>
+                        <!--<span class="text-xl font-bold text-white">Optioner</span>-->
+                    </div>
+                    <p class="mb-4">Creative design solutions to help your business stand out and succeed.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Web Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">Graphic Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">Amazon A+ Pages</a></li>
+                        <li><a href="#" class="hover:text-white transition">Social Media</a></li>
+                        <li><a href="#" class="hover:text-white transition">Branding</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>The City of Antipolo, Philippines - 1870</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>(+63) 9567-990-111</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>jorc@optioner.design</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Optioner Multimedia Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Widget -->
+    <div id="chatbotContainer" class="fixed bottom-8 right-8 z-50 hidden">
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden w-80">
+            <!-- Chatbot Header -->
+            <div class="bg-primary text-white p-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-robot mr-2"></i>
+                    <span class="font-medium">Design Assistant</span>
+                </div>
+                <button id="closeChatbot" class="text-white hover:text-gray-200">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Chatbot Messages -->
+            <div id="chatbotMessages" class="h-64 p-4 overflow-y-auto bg-gray-50">
+                <div class="mb-4">
+                    <div class="bg-gray-200 rounded-lg p-3 inline-block max-w-xs">
+                        <p class="text-gray-800">Hello! I'm your AI design assistant. How can I help you with your creative project today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chatbot Input -->
+            <div class="border-t border-gray-200 p-4 bg-white">
+                <div class="flex">
+                    <input type="text" id="chatbotInput" placeholder="Ask me anything about design..." class="flex-1 border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button id="sendMessage" class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-opacity-90 transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbotToggle" class="fixed bottom-8 right-8 bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg chatbot-toggle hover:bg-opacity-90 transition z-40">
+        <i class="fas fa-robot text-2xl"></i>
+    </button>
+
+    <script>
+        // Chatbot functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatbotToggle = document.getElementById('chatbotToggle');
+            const chatbotContainer = document.getElementById('chatbotContainer');
+            const closeChatbot = document.getElementById('closeChatbot');
+            const openChatbot = document.getElementById('openChatbot');
+            const sendMessage = document.getElementById('sendMessage');
+            const chatbotInput = document.getElementById('chatbotInput');
+            const chatbotMessages = document.getElementById('chatbotMessages');
+            
+            // Toggle chatbot visibility
+            chatbotToggle.addEventListener('click', function() {
+                chatbotContainer.classList.toggle('hidden');
+            });
+            
+            // Open chatbot from CTA button
+            openChatbot.addEventListener('click', function(e) {
+                e.preventDefault();
+                chatbotContainer.classList.remove('hidden');
+            });
+            
+            // Close chatbot
+            closeChatbot.addEventListener('click', function() {
+                chatbotContainer.classList.add('hidden');
+            });
+            
+            // Send message
+            sendMessage.addEventListener('click', function() {
+                sendChatMessage();
+            });
+            
+            // Send message on Enter key
+            chatbotInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendChatMessage();
+                }
+            });
+            
+            function sendChatMessage() {
+                const message = chatbotInput.value.trim();
+                if (message) {
+                    // Add user message
+                    addMessage(message, 'user');
+                    chatbotInput.value = '';
+                    
+                    // Simulate AI response after a short delay
+                    setTimeout(function() {
+                        const response = getAIResponse(message);
+                        addMessage(response, 'ai');
+                    }, 1000);
+                }
+            }
+            
+            function addMessage(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('mb-4');
+                
+                if (sender === 'user') {
+                    messageDiv.classList.add('text-right');
+                    messageDiv.innerHTML = `
+                        <div class="bg-primary text-white rounded-lg p-3 inline-block max-w-xs">
+                            <p>${text}</p>
+                        </div>
+                    `;
+                } else {
+                    messageDiv.innerHTML = `
+                        <div class="bg-gray-200 rounded-lg p-3 inline-block max-w-xs">
+                            <p class="text-gray-800">${text}</p>
+                        </div>
+                    `;
+                }
+                
+                chatbotMessages.appendChild(messageDiv);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+            }
+            
+            function getAIResponse(message) {
+                // Simple response logic - in a real implementation, this would connect to an AI service
+                const lowerMessage = message.toLowerCase();
+                
+                if (lowerMessage.includes('web design') || lowerMessage.includes('website')) {
+                    return "For web design, we recommend focusing on mobile responsiveness, fast loading times, and clear calls-to-action. Would you like me to generate some layout ideas for you?";
+                } else if (lowerMessage.includes('logo') || lowerMessage.includes('branding')) {
+                    return "Great! For branding, we should consider your target audience and brand personality. I can suggest some color palettes and font combinations if you'd like.";
+                } else if (lowerMessage.includes('amazon') || lowerMessage.includes('a+')) {
+                    return "Amazon A+ content should highlight product benefits with high-quality images and comparison charts. I can show you some successful examples if you're interested.";
+                } else if (lowerMessage.includes('social media') || lowerMessage.includes('instagram')) {
+                    return "For social media, consistent branding and engaging visuals are key. I can generate some post ideas based on your industry if you'd like.";
+                } else if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                    return "Hello! I'm here to help with all your design needs. What project are you working on today?";
+                } else {
+                    return "That's an interesting question about design! For the best results, I recommend consulting with one of our human designers. Would you like me to connect you?";
+                }
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        document.querySelector(targetId).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
